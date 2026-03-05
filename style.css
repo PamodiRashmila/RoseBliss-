@@ -174,7 +174,7 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     text-align: center; 
     font-size: 1rem;
     padding: 35px 35px;
-              /* This makes the box length smaller */
+              
 }
 
 .contact-info .box {
@@ -182,11 +182,11 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     padding: 30px 30px;
     margin-bottom: 20px;
     border-radius: 12px;
-    width: 100%;            /* This makes the box length smaller */
+    width: 100%;            
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-size: 1rem;;
 }
-            /* Makes the text sharper */
+            
 
 /* Aligning the right side form */
 .contact-form {
@@ -298,7 +298,7 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
-/* This forces the boxes on the About page to be side-by-side and identical */
+
 .grid-2 {
     display: flex;
     justify-content: center;
@@ -308,15 +308,15 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 }
 
 .grid-2 .box {
-    flex: 1;              /* Forces both boxes to take up equal space */
-    max-width: 450px;     /* Allows them to be wider than the contact boxes */
+    flex: 1;              
+    max-width: 450px;     
     text-align: center;
 }
 /* MOBILE PHONE FIX */
 @media (max-width: 768px) {
     /* 1. Fix the giant text */
     .contact-info .box {
-        width: 90% !important; /* Makes box fit the phone screen width */
+        width: 90% !important; 
         margin: 10px auto;
         padding: 15px;
     }
@@ -324,7 +324,7 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     .contact-info .box font-size, 
     .contact-info .box p, 
     .contact-info .box strong {
-        font-size: 1rem !important; /* Forces text to stay small on phones */
+        font-size: 1rem !important; 
     }
 
     /* 2. Stack the About page boxes vertically */
@@ -340,6 +340,7 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 
     /* 3. Fix the giant Hero text on the Home page */
     .hero h1 {
-        font-size: 2rem !important; /* Shrinks "Fresh Roses" so it fits */
+        font-size: 2rem !important; 
     }
+
 }
