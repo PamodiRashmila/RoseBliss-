@@ -6,4 +6,4 @@ A beautiful florist website for RoseBliss, featuring a gallery, special offers, 
 * CSS3 (Grid & Flexbox)
 
 ## 🚀 Live Demo
-[Your link will go here after the next step!]
+https://pamodirashmila.github.io/RoseBliss-/shop.html
