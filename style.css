@@ -167,32 +167,30 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 
 /* Aligning the left side info boxes */
 .contact-info {
-    flex: 1;
+    flex: 0 0 55;
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center; 
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 35px 35px;
+              /* This makes the box length smaller */
 }
 
-.contact-info.box {
+.contact-info .box {
     background: #fff;
-    padding: 15px 25px;
-    margin-bottom: 15px;
+    padding: 30px 30px;
+    margin-bottom: 20px;
     border-radius: 12px;
-    width: 320px;            /* This makes the box length smaller */
+    width: 100%;            /* This makes the box length smaller */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    font-size: 5rem;;
+    font-size: 1.5rem;;
 }
-.contact-details .box strong {
-    font-size: 5rem;       /* Makes the topic titles bigger */
-    display: block;          /* Puts the title on its own line */
-    margin-bottom: 5px;      /* Adds space before the info below it */
-    color: #333;             /* Makes the text sharper */
-}
+            /* Makes the text sharper */
+
 /* Aligning the right side form */
 .contact-form {
-    flex: 1;
+    flex: 0 0 45;
     background: white;
     padding: 30px;
     border-radius: 15px;
@@ -299,4 +297,18 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     background-color: #d63384; 
     transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+/* This forces the boxes on the About page to be side-by-side and identical */
+.grid-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch; /* Makes them the same height */
+    width: 100%;
+}
+
+.grid-2 .box {
+    flex: 1;              /* Forces both boxes to take up equal space */
+    max-width: 450px;     /* Allows them to be wider than the contact boxes */
+    text-align: center;
 }
