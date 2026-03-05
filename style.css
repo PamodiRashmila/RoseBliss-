@@ -50,7 +50,7 @@ nav ul li a:hover { color: #e973db; }
     padding: 0 20px;
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero h1 { font-size: 3.3rem; margin-bottom: 10px; }
 
 /* Footer */
 footer {
@@ -126,13 +126,14 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 
 /* Mission & Vision Boxes */
 .box {
-    padding: 30px;
+    padding: 15px 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     background: #ffffff; 
     box-shadow: 0 5px 15px rgba(214, 51, 132, 0.1); 
     text-align: center;
     transition: 0.3s;
+    margin-bottom: 15px;
 }
 
 .box:hover {
@@ -155,11 +156,11 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 }
 /* Container for the entire Contact section */
 .contact-container {
-    max-width: 1100px;
-    margin: 60px auto; 
+    max-width: 850px;
+    margin: 0px auto; 
     padding: 20px;
     display: flex;
-    gap: 50px; 
+    gap: 30px; 
     justify-content: center;
     align-items: flex-start;
 }
@@ -169,10 +170,26 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     text-align: center; 
+    font-size: 1.5rem;
 }
 
+.contact-info.box {
+    background: #fff;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    width: 320px;            /* This makes the box length smaller */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 5rem;;
+}
+.contact-details .box strong {
+    font-size: 5rem;       /* Makes the topic titles bigger */
+    display: block;          /* Puts the title on its own line */
+    margin-bottom: 5px;      /* Adds space before the info below it */
+    color: #333;             /* Makes the text sharper */
+}
 /* Aligning the right side form */
 .contact-form {
     flex: 1;
@@ -207,16 +224,20 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 
 .contact-container {
     display: flex;
-    gap: 40px;
-    max-width: 1000px;
-    width: 100%;
+    gap: 30px;
+    max-width: 850px;
+    
     justify-content: center; 
+    margin:  0 auto;
     margin-top: 10px;
+    align-items: flex-start;
 }
 
 .form-container {
-    flex: 1; 
-    padding: 20px;
+    flex: 1.2; 
+    padding: 22px;
+    max-width: 500px;
+
 }
 
 
