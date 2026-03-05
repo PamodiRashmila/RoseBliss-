@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'arial', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body { line-height: 1.6; color: #333;
@@ -178,13 +178,13 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 }
 
 .contact-info .box {
-    background: #fff;
+    background: #ddabce;
     padding: 30px 30px;
     margin-bottom: 20px;
     border-radius: 12px;
     width: 100%;            /* This makes the box length smaller */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    font-size: 1.5rem;;
+    font-size: 1rem;;
 }
             /* Makes the text sharper */
 
@@ -210,7 +210,7 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
 }
 /* Specific background for the Contact Page */
 .contact-page-body {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/contacg bg.jpg') center/cover no-repeat; /* Light Pink background for the contact page */
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/contct.jpg') center/cover no-repeat; /* Light Pink background for the contact page */
 }
 .contact-wrapper {
     display: flex;
@@ -311,4 +311,35 @@ button { background: #d63384; color: white; border: none; padding: 10px; cursor:
     flex: 1;              /* Forces both boxes to take up equal space */
     max-width: 450px;     /* Allows them to be wider than the contact boxes */
     text-align: center;
+}
+/* MOBILE PHONE FIX */
+@media (max-width: 768px) {
+    /* 1. Fix the giant text */
+    .contact-info .box {
+        width: 90% !important; /* Makes box fit the phone screen width */
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .contact-info .box font-size, 
+    .contact-info .box p, 
+    .contact-info .box strong {
+        font-size: 1rem !important; /* Forces text to stay small on phones */
+    }
+
+    /* 2. Stack the About page boxes vertically */
+    .grid-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-2 .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* 3. Fix the giant Hero text on the Home page */
+    .hero h1 {
+        font-size: 2rem !important; /* Shrinks "Fresh Roses" so it fits */
+    }
 }
